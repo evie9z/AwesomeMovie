@@ -57,7 +57,6 @@ export default class SwiperComponent extends Component {
           loop={false}
           showsPagination={false}
           index={0}
-          autoplay={true}
         >
           <View style={styles.slide2}>
             <Text style={styles.text}>Movie 2</Text>
