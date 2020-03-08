@@ -1,10 +1,10 @@
 {
-  "app.js": "/AwesomeMovie/static/js/app.6e8337f4.chunk.js",
-  "app.f4f6d29aa683fe742c79.map": "/AwesomeMovie/f4f6d29aa683fe742c79.map",
+  "app.js": "/AwesomeMovie/static/js/app.8d892b0b.chunk.js",
+  "app.c8d2ed6a86ab0fe18c82.map": "/AwesomeMovie/c8d2ed6a86ab0fe18c82.map",
   "runtime~app.js": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js",
   "runtime~app.39fa7d56c93939f57e49.map": "/AwesomeMovie/39fa7d56c93939f57e49.map",
-  "static/js/2.38696719.chunk.js": "/AwesomeMovie/static/js/2.38696719.chunk.js",
-  "059b9b54ae33df59cdb4.map": "/AwesomeMovie/059b9b54ae33df59cdb4.map",
+  "static/js/2.60615f67.chunk.js": "/AwesomeMovie/static/js/2.60615f67.chunk.js",
+  "fcc6e47a44351fa5c161.map": "/AwesomeMovie/fcc6e47a44351fa5c161.map",
   "apple/icons/icon_180x180.png": "/AwesomeMovie/apple/icons/icon_180x180.png",
   "apple/icons/icon_192x192.png": "/AwesomeMovie/apple/icons/icon_192x192.png",
   "apple/icons/icon_512x512.png": "/AwesomeMovie/apple/icons/icon_512x512.png",
@@ -25,10 +25,10 @@
   "favicon.ico": "/AwesomeMovie/favicon.ico",
   "index.html": "/AwesomeMovie/index.html",
   "manifest.json": "/AwesomeMovie/manifest.json",
-  "precache-manifest.d79901b59d7442c98d8b778f6b717ab7.js": "/AwesomeMovie/precache-manifest.d79901b59d7442c98d8b778f6b717ab7.js",
+  "precache-manifest.72d8237187d907d03657df5ac38aeff9.js": "/AwesomeMovie/precache-manifest.72d8237187d907d03657df5ac38aeff9.js",
   "serve.json": "/AwesomeMovie/serve.json",
   "service-worker.js": "/AwesomeMovie/service-worker.js",
-  "static/js/2.38696719.chunk.js.gz": "/AwesomeMovie/static/js/2.38696719.chunk.js.gz",
-  "static/js/app.6e8337f4.chunk.js.gz": "/AwesomeMovie/static/js/app.6e8337f4.chunk.js.gz",
+  "static/js/2.60615f67.chunk.js.gz": "/AwesomeMovie/static/js/2.60615f67.chunk.js.gz",
+  "static/js/app.8d892b0b.chunk.js.gz": "/AwesomeMovie/static/js/app.8d892b0b.chunk.js.gz",
   "static/js/runtime~app.6188b6d0.js.gz": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
 }
