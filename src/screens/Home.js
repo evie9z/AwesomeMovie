@@ -1,11 +1,27 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View, Animated } from "react-native";
+import movieList from "../mockdata/data";
+import SwiperContent from "../components/SwiperContent";
 
 export default class Home extends Component {
+  _scrollX = new Animated.Value(0);
   render() {
     return (
       <View style={styles.container}>
-        <Text>Hello EVIE!!!!</Text>
+        <Animated.ScrollView
+          pagingEnabled
+          scrollEventThrottle={16}
+          horizontal
+          onScroll={Animated.event(
+            [{ nativeEvent: { contentOffset: { x: this._scrollX } } }],
+            { useNativeDriver: true }
+          )}
+          contentContainerStyle={styles.scrollViewContainer}
+        >
+          {movieList.map((item, i) => (
+            <SwiperContent item={item} i={i} _scrollX={this._scrollX} />
+          ))}
+        </Animated.ScrollView>
       </View>
     );
   }
@@ -13,8 +29,10 @@ export default class Home extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
+    flexGrow: 1,
+    backgroundColor: "#2C2C2C"
+  },
+  scrollViewContainier: {
     alignItems: "center",
     justifyContent: "center"
   }
