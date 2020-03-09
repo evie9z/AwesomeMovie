@@ -1,10 +1,10 @@
 {
-  "app.js": "/AwesomeMovie/static/js/app.8fbbda29.chunk.js",
-  "app.c6bb0534fcb070ad1000.map": "/AwesomeMovie/c6bb0534fcb070ad1000.map",
+  "app.js": "/AwesomeMovie/static/js/app.152237f4.chunk.js",
+  "app.36f90f04a40554560abc.map": "/AwesomeMovie/36f90f04a40554560abc.map",
   "runtime~app.js": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js",
   "runtime~app.39fa7d56c93939f57e49.map": "/AwesomeMovie/39fa7d56c93939f57e49.map",
-  "static/js/2.275fd5a4.chunk.js": "/AwesomeMovie/static/js/2.275fd5a4.chunk.js",
-  "0616a105767b46912d4b.map": "/AwesomeMovie/0616a105767b46912d4b.map",
+  "static/js/2.74b0fc52.chunk.js": "/AwesomeMovie/static/js/2.74b0fc52.chunk.js",
+  "86099ff284ba806415dd.map": "/AwesomeMovie/86099ff284ba806415dd.map",
   "apple/icons/icon_180x180.png": "/AwesomeMovie/apple/icons/icon_180x180.png",
   "apple/icons/icon_192x192.png": "/AwesomeMovie/apple/icons/icon_192x192.png",
   "apple/icons/icon_512x512.png": "/AwesomeMovie/apple/icons/icon_512x512.png",
@@ -25,10 +25,12 @@
   "favicon.ico": "/AwesomeMovie/favicon.ico",
   "index.html": "/AwesomeMovie/index.html",
   "manifest.json": "/AwesomeMovie/manifest.json",
-  "precache-manifest.86de570fc5a6146b7eeedce8f6754ba3.js": "/AwesomeMovie/precache-manifest.86de570fc5a6146b7eeedce8f6754ba3.js",
+  "precache-manifest.0500e43de4a2d0ee793d3b39bce9e9c6.js": "/AwesomeMovie/precache-manifest.0500e43de4a2d0ee793d3b39bce9e9c6.js",
   "serve.json": "/AwesomeMovie/serve.json",
   "service-worker.js": "/AwesomeMovie/service-worker.js",
-  "static/js/2.275fd5a4.chunk.js.gz": "/AwesomeMovie/static/js/2.275fd5a4.chunk.js.gz",
-  "static/js/app.8fbbda29.chunk.js.gz": "/AwesomeMovie/static/js/app.8fbbda29.chunk.js.gz",
-  "static/js/runtime~app.6188b6d0.js.gz": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
+  "static/js/2.74b0fc52.chunk.js.gz": "/AwesomeMovie/static/js/2.74b0fc52.chunk.js.gz",
+  "static/js/app.152237f4.chunk.js.gz": "/AwesomeMovie/static/js/app.152237f4.chunk.js.gz",
+  "static/js/runtime~app.6188b6d0.js.gz": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz",
+  "static/media/1_jojorabbit.jpg": "/AwesomeMovie/static/media/1_jojorabbit.6a19f475.jpg",
+  "static/media/2_parasite.jpg": "/AwesomeMovie/static/media/2_parasite.8294d926.jpg"
 }
