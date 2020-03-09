@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/AwesomeMovie/precache-manifest.19d044137b7fd83604549f02847d8236.js"
+  "/AwesomeMovie/precache-manifest.2437efcc7bcd3589b30ebab558dba8d9.js"
 );
 
 workbox.skipWaiting();
