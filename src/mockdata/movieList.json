@@ -9,6 +9,7 @@
     "brief": "A young boy in Hitler's army finds out his mother is hiding a Jewish girl in their home.",
     "averageRating": 8.0,
     "runtimeMinutes": 108,
+    "labels": ["Drama", "Comedy", "War"],
     "theater": ["Cinemark Lincoln Square"],
     "time": [
       "2020-03-17T19:00:00",
@@ -26,6 +27,7 @@
     "brief": "A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.",
     "averageRating": 8.6,
     "runtimeMinutes": 172,
+    "labels": ["Drama", "Comedy", "Thriller"],
     "theater": ["Cinemark Lincoln Square"],
     "time": [
       "2020-03-17T19:00:00",

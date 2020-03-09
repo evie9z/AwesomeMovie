@@ -30,8 +30,8 @@ export default class PosterImage extends Component {
 
 const styles = StyleSheet.create({
   moviePosterWrapper: {
-    marginTop: 97,
-    marginBottom: 50,
+    marginTop: hp("12%"),
+    marginBottom: 30,
     height: hp("60%"),
     width: (hp("60%") * 2) / 3,
     // Border radius

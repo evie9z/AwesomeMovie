@@ -2,8 +2,15 @@ import React, { Component } from "react";
 import { StyleSheet, View, Animated } from "react-native";
 import movieList from "../mockdata/data";
 import SwiperContent from "../components/SwiperContent";
+import * as Font from "expo-font";
 
 export default class Home extends Component {
+  componentDidMount() {
+    Font.loadAsync({
+      rockwell: require("../assets/fonts/Rockwell.ttc"),
+      din: require("../assets/fonts/DINBold.ttf")
+    });
+  }
   _scrollX = new Animated.Value(0);
   render() {
     return (
