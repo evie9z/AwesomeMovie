@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "6d0fe4fd2fb5e7221f6a16592045b691",
-    "url": "/AwesomeMovie/apple/splash/icon_1242x2208.png"
+    "revision": "921f3baffb92e7961238247f0821efe4",
+    "url": "/AwesomeMovie/apple/splash/icon_1136x640.png"
   },
   {
-    "revision": "e870507bb2b65f5bd584",
-    "url": "/AwesomeMovie/static/js/app.d6192788.chunk.js"
+    "revision": "b29b688d8da17751059a",
+    "url": "/AwesomeMovie/static/js/app.a6c762df.chunk.js"
   },
   {
-    "revision": "3dbb01bc95ed25d1b6d83cdb8aff12e7",
-    "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
+    "revision": "bc5e34a210137fb90528e25595e11c43",
+    "url": "/AwesomeMovie/static/js/app.a6c762df.chunk.js.gz"
   },
   {
     "revision": "6a19f4758b1eba2bf96c5af835130c5c",
@@ -24,44 +24,52 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/static/media/icon_star.08abfa0a.png"
   },
   {
-    "revision": "733a57df42dfada9507a8f6800dda727",
-    "url": "/AwesomeMovie/static/js/app.d6192788.chunk.js.gz"
+    "revision": "7f22e4928b358740c3734063317d6cb9",
+    "url": "/AwesomeMovie/static/media/Rockwell.7f22e492.ttc"
+  },
+  {
+    "revision": "3dbb01bc95ed25d1b6d83cdb8aff12e7",
+    "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
   },
   {
     "revision": "39fa7d56c93939f57e49",
     "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js"
   },
   {
+    "revision": "80123ce0c8fd593d4bdef3fc9dda87e6",
+    "url": "/AwesomeMovie/apple/splash/icon_1792x828.png"
+  },
+  {
+    "revision": "3f57566f6672a3adea19ff936f27fd61",
+    "url": "/AwesomeMovie/static/js/2.7d5dae73.chunk.js.gz"
+  },
+  {
     "revision": "34e464519fb0aaa0166ec02b790a50e1",
     "url": "/AwesomeMovie/apple/splash/icon_2208x1242.png"
   },
   {
-    "revision": "8bf3261fffd50636b8a52c4c8a1f4175",
-    "url": "/AwesomeMovie/static/js/2.89ca7b15.chunk.js.gz"
+    "revision": "d3a82b13da9cac887a44ec48cd996a7e",
+    "url": "/AwesomeMovie/manifest.json"
   },
   {
-    "revision": "625b7b8fb356e35bd5d9b3013ac04403",
-    "url": "/AwesomeMovie/apple/splash/icon_2436x1125.png"
-  },
-  {
-    "revision": "7a7bc7ead25db795e58b336f04d2624c",
-    "url": "/AwesomeMovie/favicon.ico"
-  },
-  {
-    "revision": "a1b13e7c7a5ef32ed4fb",
-    "url": "/AwesomeMovie/static/js/2.89ca7b15.chunk.js"
+    "revision": "04b70c49e6651a1077ec",
+    "url": "/AwesomeMovie/static/js/2.7d5dae73.chunk.js"
   },
   {
     "revision": "d0c694b562b2208635f250762cd7fc79",
     "url": "/AwesomeMovie/serve.json"
   },
   {
-    "revision": "6c6827f95fbe08ec8539541f94fe6365",
-    "url": "/AwesomeMovie/index.html"
+    "revision": "8606d83ff710984016342bf8edef7fe2",
+    "url": "/AwesomeMovie/apple/splash/icon_2688x1242.png"
   },
   {
-    "revision": "d3a82b13da9cac887a44ec48cd996a7e",
-    "url": "/AwesomeMovie/manifest.json"
+    "revision": "7a7bc7ead25db795e58b336f04d2624c",
+    "url": "/AwesomeMovie/favicon.ico"
+  },
+  {
+    "revision": "7943dea21e4e28946f3f27d41260cbd1",
+    "url": "/AwesomeMovie/index.html"
   },
   {
     "revision": "23097b281c98125fc0e071eacf877e60",
@@ -72,10 +80,6 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_1242x2688.png"
   },
   {
-    "revision": "80123ce0c8fd593d4bdef3fc9dda87e6",
-    "url": "/AwesomeMovie/apple/splash/icon_1792x828.png"
-  },
-  {
     "revision": "48c7ed4e7da9792af288a60d7242d615",
     "url": "/AwesomeMovie/expo-service-worker.js"
   },
@@ -84,8 +88,12 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/expo-service-worker.js.gz"
   },
   {
-    "revision": "8606d83ff710984016342bf8edef7fe2",
-    "url": "/AwesomeMovie/apple/splash/icon_2688x1242.png"
+    "revision": "625b7b8fb356e35bd5d9b3013ac04403",
+    "url": "/AwesomeMovie/apple/splash/icon_2436x1125.png"
+  },
+  {
+    "revision": "d20d4e3ad750517ff1b6536c7ed0b0ef",
+    "url": "/AwesomeMovie/apple/splash/icon_828x1792.png"
   },
   {
     "revision": "771ae733c19f2838717932cff8c5ca44",
@@ -96,12 +104,8 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_1334x750.png"
   },
   {
-    "revision": "d20d4e3ad750517ff1b6536c7ed0b0ef",
-    "url": "/AwesomeMovie/apple/splash/icon_828x1792.png"
-  },
-  {
-    "revision": "921f3baffb92e7961238247f0821efe4",
-    "url": "/AwesomeMovie/apple/splash/icon_1136x640.png"
+    "revision": "6d0fe4fd2fb5e7221f6a16592045b691",
+    "url": "/AwesomeMovie/apple/splash/icon_1242x2208.png"
   },
   {
     "revision": "f371186f0c8363386bdf85b3d093e25e",
@@ -118,5 +122,9 @@ self.__precacheManifest = [
   {
     "revision": "ef58ff9a14b1871e5232fada458806e5",
     "url": "/AwesomeMovie/apple/icons/icon_180x180.png"
+  },
+  {
+    "revision": "e07712419b190b368204f9c1c715912d",
+    "url": "/AwesomeMovie/./fonts/DINBold.ttf"
   }
 ];
