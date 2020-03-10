@@ -6,7 +6,6 @@ import {
 } from "react-native-responsive-screen";
 import Assets from "../mockdata/Assets";
 
-const windowWidth = wp("100%");
 const contentWrapperWidth = (hp("60%") * 2) / 3;
 
 export default class SwiperText extends Component {

@@ -4,7 +4,6 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
-import Transition from "react-navigation-fluid-transitions";
 
 export default class PosterImage extends Component {
   render() {

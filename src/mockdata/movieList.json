@@ -1,38 +1,150 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "title": "Jojo Rabbit",
     "poster": "jojoRabbit",
     "posterPrimaryColor": "#D4CEC0",
     "posterSecondaryColor": "#BC8383",
     "rating": "PG-13",
     "brief": "A young boy in Hitler's army finds out his mother is hiding a Jewish girl in their home.",
-    "averageRating": 8.0,
+    "averageRating": "8.0",
     "runtimeMinutes": 108,
+    "director": ["Taika Waititi"],
+    "actors": [
+      "Roman Griffin Davis",
+      "Thomasin McKenzie",
+      "Scarlett Johansson"
+    ],
     "labels": ["Drama", "Comedy", "War"],
-    "theater": ["Cinemark Lincoln Square"],
-    "time": [
-      "2020-03-17T19:00:00",
-      "2020-03-17T21:00:00",
-      "2020-03-17T23:00:00"
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "showtimes": [
+          "2020-03-17T19:00:00",
+          "2020-03-17T21:00:00",
+          "2020-03-17T23:00:00"
+        ]
+      }
     ]
   },
   {
-    "id": 2,
+    "id": 1,
     "title": "Parasite",
     "poster": "parasite",
     "posterPrimaryColor": "#A2BDA5",
     "posterSecondaryColor": "#5F7E90",
     "rating": "R",
     "brief": "A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.",
-    "averageRating": 8.6,
+    "averageRating": "8.6",
     "runtimeMinutes": 172,
+    "director": ["Bong Joon Ho"],
+    "actors": ["Kang-ho Song", "Sun-kyun Lee", "Yeo-jeong Jo"],
     "labels": ["Drama", "Comedy", "Thriller"],
-    "theater": ["Cinemark Lincoln Square"],
-    "time": [
-      "2020-03-17T19:00:00",
-      "2020-03-17T21:00:00",
-      "2020-03-17T23:00:00"
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "showtimes": [
+          "2020-03-17T19:00:00",
+          "2020-03-17T21:00:00",
+          "2020-03-17T23:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "A Beautiful Day in the Neighborhood",
+    "poster": "beautifulday",
+    "posterPrimaryColor": "#E19EB1",
+    "posterSecondaryColor": "#A6E7F1",
+    "rating": "PG",
+    "brief": "Based on the true story of a real-life friendship between Fred Rogers and journalist Lloyd Vogel.",
+    "averageRating": "7.4",
+    "runtimeMinutes": 109,
+    "director": ["Marielle Heller"],
+    "actors": ["Tom Hanks", "Matthew Rhys", "Chris Cooper"],
+    "labels": ["Biography", "Drama"],
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "showtimes": [
+          "2020-03-17T19:00:00",
+          "2020-03-17T21:00:00",
+          "2020-03-17T23:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Knives Out",
+    "poster": "knivesout",
+    "posterPrimaryColor": "#CE9E8A",
+    "posterSecondaryColor": "#A5A5A5",
+    "rating": "PG-13",
+    "brief": "A detective investigates the death of a patriarch of an eccentric, combative family.",
+    "averageRating": "8.0",
+    "runtimeMinutes": 131,
+    "director": ["Rian Johnson"],
+    "actors": ["Daniel Craig", "Chris Evans", "Ana de Armas"],
+    "labels": ["Comedy", "Crime", "Drama"],
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "showtimes": [
+          "2020-03-17T19:00:00",
+          "2020-03-17T21:00:00",
+          "2020-03-17T23:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "1917",
+    "poster": "nineteenseventeen",
+    "posterPrimaryColor": "#A6BFDD",
+    "posterSecondaryColor": "#C1A076",
+    "rating": "R",
+    "brief": "April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.",
+    "averageRating": "8.4",
+    "runtimeMinutes": 119,
+    "director": ["Sam Mendes"],
+    "actors": ["Dean-Charles Chapman", "George MacKay", "Daniel Mays"],
+    "labels": ["Drama", "War"],
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "showtimes": [
+          "2020-03-17T19:00:00",
+          "2020-03-17T21:00:00",
+          "2020-03-17T23:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Joker",
+    "poster": "joker",
+    "posterPrimaryColor": "#8FCAB6",
+    "posterSecondaryColor": "#D3C6A7",
+    "rating": "R",
+    "brief": "In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.",
+    "averageRating": "8.6",
+    "runtimeMinutes": 122,
+    "director": ["Todd Phillips"],
+    "actors": ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"],
+    "labels": ["Crime", "Drama", "Thriller"],
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "showtimes": [
+          "2020-03-17T19:00:00",
+          "2020-03-17T21:00:00",
+          "2020-03-17T23:00:00"
+        ]
+      }
     ]
   }
 ]

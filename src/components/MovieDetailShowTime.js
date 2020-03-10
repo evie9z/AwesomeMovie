@@ -5,7 +5,6 @@ import {
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 import Assets from "../mockdata/Assets";
-import { Transition } from "react-navigation-fluid-transitions";
 import moment from "moment";
 
 const contentWrapperWidth = wp("90%");
@@ -18,7 +17,7 @@ export default class Index extends Component {
         <View style={[styles.showtimeWrapper]}>
           <Text style={styles.title}>Showtime</Text>
           <View style={styles.select}>
-            <Text style={styles.selectText}>{item.theater}</Text>
+            <Text style={styles.selectText}>{item.showtimes[0].theater}</Text>
             <View style={styles.selectIconWrapper}>
               <Image style={styles.selectIcon} source={Assets.icon["select"]} />
             </View>
@@ -30,7 +29,7 @@ export default class Index extends Component {
             </View>
           </View>
           <View style={styles.times}>
-            {item.time.map((t, i) => (
+            {item.showtimes[0].showtimes.map((t, i) => (
               <Text style={[styles.time]}>{moment(t).format("LT")}</Text>
             ))}
           </View>

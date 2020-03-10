@@ -19,7 +19,7 @@ export default class SwiperContent extends Component {
       (i - 2) * windowWidth,
       (i - 1) * windowWidth,
       i * windowWidth,
-      i + 2 * windowWidth
+      (i + 1) * windowWidth
     ];
 
     const imageScale = this.props._scrollX.interpolate({
