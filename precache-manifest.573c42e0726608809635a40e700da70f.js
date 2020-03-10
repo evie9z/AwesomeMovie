@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/icons/icon_192x192.png"
   },
   {
-    "revision": "20f9ecaef99743d73e8a",
-    "url": "/AwesomeMovie/static/js/app.85fbd440.chunk.js"
+    "revision": "57f5bb8432070b34aab0",
+    "url": "/AwesomeMovie/static/js/app.a42f1d6b.chunk.js"
   },
   {
-    "revision": "1cf4a36cdb1f49f83cdbdd6dc120e85d",
-    "url": "/AwesomeMovie/static/js/app.85fbd440.chunk.js.gz"
+    "revision": "4cc92940f1b70afa8dfb380e354ce897",
+    "url": "/AwesomeMovie/static/js/app.a42f1d6b.chunk.js.gz"
   },
   {
     "revision": "6165c9d7a2e729ba57b23dd93add5366",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/favicon.ico"
   },
   {
-    "revision": "d664bb74c8559bd7f4724f6c6bca66e7",
+    "revision": "3126cda18101f9280e8ae1733818a2b6",
     "url": "/AwesomeMovie/index.html"
   },
   {
