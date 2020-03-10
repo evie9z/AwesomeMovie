@@ -12,7 +12,7 @@ export default class PosterImage extends Component {
       <View style={[styles.moviePosterWrapper]}>
         <TouchableOpacity
           key={CurrId}
-          activeOpacity={0.8}
+          activeOpacity={1}
           onPress={() =>
             this.props.navigation.navigate("MovieDetail", {
               itemId: CurrId
