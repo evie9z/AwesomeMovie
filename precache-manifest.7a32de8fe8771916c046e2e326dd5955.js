@@ -1,27 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "921f3baffb92e7961238247f0821efe4",
-    "url": "/AwesomeMovie/apple/splash/icon_1136x640.png"
+    "revision": "dd0d8974f196283ab21f6bb647882750",
+    "url": "/AwesomeMovie/apple/icons/icon_192x192.png"
   },
   {
-    "revision": "b29b688d8da17751059a",
-    "url": "/AwesomeMovie/static/js/app.a6c762df.chunk.js"
+    "revision": "20f9ecaef99743d73e8a",
+    "url": "/AwesomeMovie/static/js/app.85fbd440.chunk.js"
   },
   {
-    "revision": "bc5e34a210137fb90528e25595e11c43",
-    "url": "/AwesomeMovie/static/js/app.a6c762df.chunk.js.gz"
+    "revision": "1cf4a36cdb1f49f83cdbdd6dc120e85d",
+    "url": "/AwesomeMovie/static/js/app.85fbd440.chunk.js.gz"
   },
   {
-    "revision": "6a19f4758b1eba2bf96c5af835130c5c",
-    "url": "/AwesomeMovie/static/media/1_jojorabbit.6a19f475.jpg"
-  },
-  {
-    "revision": "8294d926ddf0d3e248fff54ba96edf8e",
-    "url": "/AwesomeMovie/static/media/2_parasite.8294d926.jpg"
-  },
-  {
-    "revision": "08abfa0a39a2e85086d5bf16e3d9fc50",
-    "url": "/AwesomeMovie/static/media/icon_star.08abfa0a.png"
+    "revision": "6165c9d7a2e729ba57b23dd93add5366",
+    "url": "/AwesomeMovie/static/media/back-icon-mask.6165c9d7.png"
   },
   {
     "revision": "7f22e4928b358740c3734063317d6cb9",
@@ -32,6 +24,34 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
   },
   {
+    "revision": "6a19f4758b1eba2bf96c5af835130c5c",
+    "url": "/AwesomeMovie/static/media/0_jojorabbit.6a19f475.jpg"
+  },
+  {
+    "revision": "8294d926ddf0d3e248fff54ba96edf8e",
+    "url": "/AwesomeMovie/static/media/1_parasite.8294d926.jpg"
+  },
+  {
+    "revision": "104fe2b405ded506a3d384c66958fc55",
+    "url": "/AwesomeMovie/static/media/2_beautifulday.104fe2b4.jpg"
+  },
+  {
+    "revision": "0723d16147604f684a029d32cb311a8f",
+    "url": "/AwesomeMovie/static/media/3_knivesout.0723d161.jpg"
+  },
+  {
+    "revision": "c28a7ae28f77f67ece38948230214942",
+    "url": "/AwesomeMovie/static/media/4_nineteenseventeen.c28a7ae2.jpg"
+  },
+  {
+    "revision": "a8cc44b370e6b3906ae92ca9248eacb5",
+    "url": "/AwesomeMovie/static/media/5_joker.a8cc44b3.jpg"
+  },
+  {
+    "revision": "08abfa0a39a2e85086d5bf16e3d9fc50",
+    "url": "/AwesomeMovie/static/media/icon_star.08abfa0a.png"
+  },
+  {
     "revision": "39fa7d56c93939f57e49",
     "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js"
   },
@@ -40,8 +60,8 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_1792x828.png"
   },
   {
-    "revision": "3f57566f6672a3adea19ff936f27fd61",
-    "url": "/AwesomeMovie/static/js/2.7d5dae73.chunk.js.gz"
+    "revision": "6e44cb09d900bd4d2b301f683c11bebe",
+    "url": "/AwesomeMovie/static/js/2.ae35f31a.chunk.js.gz"
   },
   {
     "revision": "34e464519fb0aaa0166ec02b790a50e1",
@@ -52,12 +72,12 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/manifest.json"
   },
   {
-    "revision": "04b70c49e6651a1077ec",
-    "url": "/AwesomeMovie/static/js/2.7d5dae73.chunk.js"
-  },
-  {
     "revision": "d0c694b562b2208635f250762cd7fc79",
     "url": "/AwesomeMovie/serve.json"
+  },
+  {
+    "revision": "7ba42948fc8d8f884c36",
+    "url": "/AwesomeMovie/static/js/2.ae35f31a.chunk.js"
   },
   {
     "revision": "8606d83ff710984016342bf8edef7fe2",
@@ -68,7 +88,7 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/favicon.ico"
   },
   {
-    "revision": "7943dea21e4e28946f3f27d41260cbd1",
+    "revision": "d664bb74c8559bd7f4724f6c6bca66e7",
     "url": "/AwesomeMovie/index.html"
   },
   {
@@ -108,16 +128,16 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_1242x2208.png"
   },
   {
+    "revision": "921f3baffb92e7961238247f0821efe4",
+    "url": "/AwesomeMovie/apple/splash/icon_1136x640.png"
+  },
+  {
     "revision": "f371186f0c8363386bdf85b3d093e25e",
     "url": "/AwesomeMovie/apple/splash/icon_1125x2436.png"
   },
   {
     "revision": "b370d9dab464db3e849d854262b5d2e5",
     "url": "/AwesomeMovie/apple/icons/icon_512x512.png"
-  },
-  {
-    "revision": "dd0d8974f196283ab21f6bb647882750",
-    "url": "/AwesomeMovie/apple/icons/icon_192x192.png"
   },
   {
     "revision": "ef58ff9a14b1871e5232fada458806e5",
