@@ -6,18 +6,24 @@ import Profile from "./src/screens/Profile";
 import { enableScreens } from "react-native-screens";
 
 enableScreens();
+
 const drawer = createDrawerNavigator(
   {
-    Home,
-    Profile,
-    Tickets
+    Home: { screen: Home },
+    Profile: { screen: Profile },
+    Ticket: { screen: Tickets }
   },
   {
     initialRouteName: "Home",
-    drawerPosition: "left"
+    drawerPosition: "left",
+    drawerBackgroundColor: "#2C2C2C",
+    drawerWidth: 200,
+    contentOptions: {
+      activeTintColor: "#fff",
+      activeBackgroundColor: "#545454",
+      inactiveTintColor: "#fff"
+    }
   }
 );
 
-const App = createAppContainer(drawer);
-
-export default App;
+export default createAppContainer(drawer);

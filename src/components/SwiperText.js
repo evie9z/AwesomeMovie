@@ -12,7 +12,6 @@ const contentWrapperWidth = (hp("60%") * 2) / 3;
 export default class SwiperText extends Component {
   render() {
     const item = this.props.item;
-    console.log("imagee: " + Assets.icon["star"]);
     return (
       <Animated.View
         style={[styles.textWrapper, { opacity: this.props.imageOpacity }]}

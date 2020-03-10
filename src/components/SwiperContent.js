@@ -38,6 +38,8 @@ export default class SwiperContent extends Component {
           poster={Assets.posters[item.poster]}
           imageScale={imageScale}
           imageOpacity={imageOpacity}
+          navigation={this.props.navigation}
+          item={item}
         />
         <BackgroundCircle
           color1={item.posterPrimaryColor}
@@ -46,7 +48,11 @@ export default class SwiperContent extends Component {
           inputRange={inputRange}
           _scrollX={this.props._scrollX}
         />
-        <SwiperText item={item} imageOpacity={imageOpacity} />
+        <SwiperText
+          item={item}
+          imageOpacity={imageOpacity}
+          navigation={this.props.navigation}
+        />
       </View>
     );
   }

@@ -1,28 +1,40 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Image, Animated } from "react-native";
+import { StyleSheet, View, Animated, TouchableOpacity } from "react-native";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
+import Transition from "react-navigation-fluid-transitions";
 
 export default class PosterImage extends Component {
   render() {
+    const CurrId = this.props.item.id;
     return (
       <View style={[styles.moviePosterWrapper]}>
-        <Animated.Image
-          style={[
-            styles.moviePoster,
-            {
-              transform: [
-                {
-                  scale: this.props.imageScale
-                }
-              ],
-              opacity: this.props.imageOpacity
-            }
-          ]}
-          source={this.props.poster}
-        />
+        <TouchableOpacity
+          key={CurrId}
+          activeOpacity={0.8}
+          onPress={() =>
+            this.props.navigation.navigate("MovieDetail", {
+              itemId: CurrId
+            })
+          }
+        >
+          <Animated.Image
+            style={[
+              styles.moviePoster,
+              {
+                transform: [
+                  {
+                    scale: this.props.imageScale
+                  }
+                ],
+                opacity: this.props.imageOpacity
+              }
+            ]}
+            source={this.props.poster}
+          />
+        </TouchableOpacity>
       </View>
     );
   }
@@ -30,7 +42,7 @@ export default class PosterImage extends Component {
 
 const styles = StyleSheet.create({
   moviePosterWrapper: {
-    marginTop: hp("12%"),
+    marginTop: hp("10%"),
     marginBottom: 30,
     height: hp("60%"),
     width: (hp("60%") * 2) / 3,
@@ -49,8 +61,8 @@ const styles = StyleSheet.create({
     elevation: 2
   },
   moviePoster: {
-    flex: 1,
     width: (hp("60%") * 2) / 3,
+    height: hp("60%"),
     resizeMode: "contain",
     alignItems: "center",
     justifyContent: "center"

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
 import SwiperHeader from "../components/SwiperHeader";
 
-export default class Tickets extends Component {
+export default class Index extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -10,7 +10,7 @@ export default class Tickets extends Component {
           <SwiperHeader navigation={this.props.navigation} />
         </View>
         <View style={styles.textContainer}>
-          <Text style={styles.title}>My Tickets!</Text>
+          <Text style={styles.title}>List View!</Text>
         </View>
       </View>
     );
