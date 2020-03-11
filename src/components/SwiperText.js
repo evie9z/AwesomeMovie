@@ -9,13 +9,26 @@ import Assets from "../mockdata/Assets";
 const contentWrapperWidth = (hp("60%") * 2) / 3;
 
 export default class SwiperText extends Component {
+  // Decrease the title font size if title is too long
+  titleFontSize = titleLen => {
+    return titleLen > 15 ? 24 : 30;
+  };
+
   render() {
     const item = this.props.item;
+    console.log(item.title + " : " + item.title.length);
     return (
       <Animated.View
         style={[styles.textWrapper, { opacity: this.props.imageOpacity }]}
       >
-        <Text style={[styles.title]}>{item.title}</Text>
+        <Text
+          style={[
+            styles.title,
+            { fontSize: this.titleFontSize(item.title.length) }
+          ]}
+        >
+          {item.title}
+        </Text>
         <View style={styles.info}>
           <View style={styles.basic}>
             <View style={styles.ratingWrapper}>
@@ -108,7 +121,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "rockwell",
-    fontSize: 30,
     color: "#FFF",
     textAlign: "left"
   },
