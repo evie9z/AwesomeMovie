@@ -3,6 +3,7 @@ import Swiper from "../components/Swiper";
 import MovieDetail from "./MovieDetail";
 import ListView from "./ListView";
 import React, { Component } from "react";
+import * as Font from "expo-font";
 
 const Navigator = FluidNavigator(
   {
@@ -16,6 +17,13 @@ const Navigator = FluidNavigator(
 );
 
 export default class Home extends Component {
+  componentDidMount() {
+    Font.loadAsync({
+      rockwell: require("../assets/fonts/Rockwell.ttc"),
+      din: require("../assets/fonts/DINBold.ttf")
+    });
+  }
+
   static router = Navigator.router;
 
   render() {

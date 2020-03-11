@@ -3,15 +3,8 @@ import { StyleSheet, View, Animated } from "react-native";
 import movieList from "../mockdata/data";
 import SwiperContent from "./SwiperContent";
 import SwiperHeader from "../components/SwiperHeader";
-import * as Font from "expo-font";
 
 export default class Swiper extends Component {
-  componentDidMount() {
-    Font.loadAsync({
-      rockwell: require("../assets/fonts/Rockwell.ttc"),
-      din: require("../assets/fonts/DINBold.ttf")
-    });
-  }
   _scrollX = new Animated.Value(0);
   render() {
     return (
