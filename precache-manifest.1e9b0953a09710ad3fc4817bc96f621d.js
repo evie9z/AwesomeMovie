@@ -4,24 +4,16 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/icons/icon_192x192.png"
   },
   {
-    "revision": "57f5bb8432070b34aab0",
-    "url": "/AwesomeMovie/static/js/app.a42f1d6b.chunk.js"
+    "revision": "5b8a62606a76e5681d8c",
+    "url": "/AwesomeMovie/static/js/app.945f4427.chunk.js"
   },
   {
-    "revision": "4cc92940f1b70afa8dfb380e354ce897",
-    "url": "/AwesomeMovie/static/js/app.a42f1d6b.chunk.js.gz"
+    "revision": "6a4d206f27333e41db7b3161774586a0",
+    "url": "/AwesomeMovie/static/js/app.945f4427.chunk.js.gz"
   },
   {
     "revision": "6165c9d7a2e729ba57b23dd93add5366",
     "url": "/AwesomeMovie/static/media/back-icon-mask.6165c9d7.png"
-  },
-  {
-    "revision": "7f22e4928b358740c3734063317d6cb9",
-    "url": "/AwesomeMovie/static/media/Rockwell.7f22e492.ttc"
-  },
-  {
-    "revision": "3dbb01bc95ed25d1b6d83cdb8aff12e7",
-    "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
   },
   {
     "revision": "6a19f4758b1eba2bf96c5af835130c5c",
@@ -52,6 +44,14 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/static/media/icon_star.08abfa0a.png"
   },
   {
+    "revision": "7f22e4928b358740c3734063317d6cb9",
+    "url": "/AwesomeMovie/static/media/Rockwell.7f22e492.ttc"
+  },
+  {
+    "revision": "3dbb01bc95ed25d1b6d83cdb8aff12e7",
+    "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
+  },
+  {
     "revision": "39fa7d56c93939f57e49",
     "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js"
   },
@@ -60,8 +60,8 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_1792x828.png"
   },
   {
-    "revision": "6e44cb09d900bd4d2b301f683c11bebe",
-    "url": "/AwesomeMovie/static/js/2.ae35f31a.chunk.js.gz"
+    "revision": "4ef36c7b97387ec475c61e6d54619144",
+    "url": "/AwesomeMovie/static/js/2.194455ef.chunk.js.gz"
   },
   {
     "revision": "34e464519fb0aaa0166ec02b790a50e1",
@@ -76,28 +76,12 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/serve.json"
   },
   {
-    "revision": "7ba42948fc8d8f884c36",
-    "url": "/AwesomeMovie/static/js/2.ae35f31a.chunk.js"
+    "revision": "631531863828b3c234ce",
+    "url": "/AwesomeMovie/static/js/2.194455ef.chunk.js"
   },
   {
     "revision": "8606d83ff710984016342bf8edef7fe2",
     "url": "/AwesomeMovie/apple/splash/icon_2688x1242.png"
-  },
-  {
-    "revision": "7a7bc7ead25db795e58b336f04d2624c",
-    "url": "/AwesomeMovie/favicon.ico"
-  },
-  {
-    "revision": "3126cda18101f9280e8ae1733818a2b6",
-    "url": "/AwesomeMovie/index.html"
-  },
-  {
-    "revision": "23097b281c98125fc0e071eacf877e60",
-    "url": "/AwesomeMovie/apple/splash/icon_750x1334.png"
-  },
-  {
-    "revision": "143df866c8b20ab40860bf1967d2df38",
-    "url": "/AwesomeMovie/apple/splash/icon_1242x2688.png"
   },
   {
     "revision": "48c7ed4e7da9792af288a60d7242d615",
@@ -108,20 +92,36 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/expo-service-worker.js.gz"
   },
   {
-    "revision": "625b7b8fb356e35bd5d9b3013ac04403",
-    "url": "/AwesomeMovie/apple/splash/icon_2436x1125.png"
+    "revision": "a6908ed44d4c97208da4c988d838f149",
+    "url": "/AwesomeMovie/index.html"
+  },
+  {
+    "revision": "7a7bc7ead25db795e58b336f04d2624c",
+    "url": "/AwesomeMovie/favicon.ico"
   },
   {
     "revision": "d20d4e3ad750517ff1b6536c7ed0b0ef",
     "url": "/AwesomeMovie/apple/splash/icon_828x1792.png"
   },
   {
+    "revision": "d1e274b40a07fb711c3918d262907f7a",
+    "url": "/AwesomeMovie/apple/splash/icon_1334x750.png"
+  },
+  {
+    "revision": "625b7b8fb356e35bd5d9b3013ac04403",
+    "url": "/AwesomeMovie/apple/splash/icon_2436x1125.png"
+  },
+  {
+    "revision": "23097b281c98125fc0e071eacf877e60",
+    "url": "/AwesomeMovie/apple/splash/icon_750x1334.png"
+  },
+  {
     "revision": "771ae733c19f2838717932cff8c5ca44",
     "url": "/AwesomeMovie/apple/splash/icon_640x1136.png"
   },
   {
-    "revision": "d1e274b40a07fb711c3918d262907f7a",
-    "url": "/AwesomeMovie/apple/splash/icon_1334x750.png"
+    "revision": "143df866c8b20ab40860bf1967d2df38",
+    "url": "/AwesomeMovie/apple/splash/icon_1242x2688.png"
   },
   {
     "revision": "6d0fe4fd2fb5e7221f6a16592045b691",
