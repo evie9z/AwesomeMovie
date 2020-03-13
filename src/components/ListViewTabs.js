@@ -1,13 +1,5 @@
 import React, { Component } from "react";
-import {
-  StyleSheet,
-  View,
-  Text,
-  ScrollView,
-  Dimensions,
-  Animated,
-  TouchableOpacity
-} from "react-native";
+import { StyleSheet, View, Animated, TouchableOpacity } from "react-native";
 
 const WHITE = "#fff";
 const GREY = "#707070";
@@ -19,12 +11,14 @@ const FONT_NORMAL = 500;
 export default class Index extends Component {
   _animatedX = new Animated.Value(0);
 
+  // Handle tab bar onclick
   tabBarOnClick = isInTheater => {
     if (isInTheater != this.props.isInTheater) {
-      this.props.handleTabIndexChange();
+      this.props.handleTabIndexChange(); // Change tab status in the parent component
       this.animateIndicator(isInTheater);
     }
   };
+  // Animate indicator when tab bar onclick happens
   animateIndicator = isInTheater => {
     Animated.timing(this._animatedX, {
       toValue: isInTheater ? IN_THEATER_POSITION : COMING_SOON_POSITION
@@ -49,6 +43,7 @@ export default class Index extends Component {
       inputRange: inputRangeX,
       outputRange: [FONT_NORMAL, FONT_BOLD]
     });
+
     return (
       <View style={styles.container}>
         <View style={styles.tabText}>
