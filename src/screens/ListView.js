@@ -1,7 +1,10 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Dimensions } from "react-native";
+import { StyleSheet, Text, View, Dimensions, ScrollView } from "react-native";
 import SwiperHeader from "../components/SwiperHeader";
 import ListViewTab from "../components/ListViewTabs";
+import ListViewContent from "../components/ListViewContent";
+import movieList from "../mockdata/movieList.json";
+import comingSoon from "../mockdata/comingSoon.json";
 
 const { width } = Dimensions.get("window");
 
@@ -10,13 +13,11 @@ export default class Index extends Component {
     isInTheater: true
   };
   handleTabIndexChange = () => {
-    console.log("Gets to handleTabIndexChange");
     this.setState({
       isInTheater: !this.state.isInTheater
     });
   };
   render() {
-    console.log("isInTheater after: " + this.state.isInTheater);
     return (
       <View style={styles.container}>
         <View style={styles.headerContainer}>
@@ -28,8 +29,11 @@ export default class Index extends Component {
             isInTheater={this.state.isInTheater}
           />
         </View>
-        <View style={styles.textContainer}>
-          <Text style={styles.title}>List View!</Text>
+        <View style={styles.scrollViewContainer}>
+          <ListViewContent
+            items={this.state.isInTheater ? movieList : comingSoon}
+            navigation={this.props.navigation}
+          />
         </View>
       </View>
     );
@@ -38,7 +42,8 @@ export default class Index extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1,
+    flex: 1,
+    // flexDirection: "row",
     backgroundColor: "#2C2C2C"
   },
   headerContainer: {
@@ -54,7 +59,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center"
   },
-  textContainer: {
+  scrollViewContainer: {
     flex: 1,
     alignItems: "center",
     justifyContent: "center"

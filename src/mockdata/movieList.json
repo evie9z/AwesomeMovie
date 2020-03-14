@@ -16,6 +16,7 @@
       "Scarlett Johansson"
     ],
     "labels": ["Drama", "Comedy", "War"],
+    "inTheater": true,
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
@@ -40,6 +41,7 @@
     "director": ["Bong Joon Ho"],
     "actors": ["Kang-ho Song", "Sun-kyun Lee", "Yeo-jeong Jo"],
     "labels": ["Drama", "Comedy", "Thriller"],
+    "inTheater": true,
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
@@ -64,6 +66,7 @@
     "director": ["Marielle Heller"],
     "actors": ["Tom Hanks", "Matthew Rhys", "Chris Cooper"],
     "labels": ["Biography", "Drama"],
+    "inTheater": true,
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
@@ -88,6 +91,7 @@
     "director": ["Rian Johnson"],
     "actors": ["Daniel Craig", "Chris Evans", "Ana de Armas"],
     "labels": ["Comedy", "Crime", "Drama"],
+    "inTheater": true,
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
@@ -112,6 +116,7 @@
     "director": ["Sam Mendes"],
     "actors": ["Dean-Charles Chapman", "George MacKay", "Daniel Mays"],
     "labels": ["Drama", "War"],
+    "inTheater": true,
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
@@ -136,6 +141,7 @@
     "director": ["Todd Phillips"],
     "actors": ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz"],
     "labels": ["Crime", "Drama", "Thriller"],
+    "inTheater": true,
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",

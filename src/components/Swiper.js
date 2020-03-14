@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { StyleSheet, View, Animated } from "react-native";
-import movieList from "../mockdata/data";
+import movieList from "../mockdata/movieList.json";
 import SwiperContent from "./SwiperContent";
 import SwiperHeader from "../components/SwiperHeader";
 
@@ -49,6 +49,7 @@ const styles = StyleSheet.create({
   },
   scrollViewContainier: {
     alignItems: "center",
+    width: 310,
     justifyContent: "center"
   }
 });

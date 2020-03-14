@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import { StyleSheet, View, ScrollView, Dimensions } from "react-native";
-import movieList from "../mockdata/data";
 import MovieDetailHeader from "../components/MovieDetailHeader";
 import MovieDetailBasicInfo from "../components/MovieDetailBasicInfo";
 import MovieDetailShowTime from "../components/MovieDetailShowTime";
+import MovieDetailReleaseDate from "../components/MovieDetailRelaseDate";
+import movieList from "../mockdata/movieList.json";
+import comingSoon from "../mockdata/comingSoon.json";
+
 const { width } = Dimensions.get("window");
 
 export default class MovieDetail extends Component {
   render() {
     const itemId = this.props.navigation.getParam("itemId", "NO-ID");
-    const item = movieList[itemId];
+    const itemFromMovieList = movieList[itemId];
+    const itemFromComingSoon = comingSoon[itemId - 6];
     return (
       <View style={styles.container}>
         <View style={styles.headerContainer}>
@@ -18,10 +22,16 @@ export default class MovieDetail extends Component {
         <ScrollView contentContainerStyle={styles.scrollViewContainer}>
           <View style={styles.contentWrapper}>
             <View>
-              <MovieDetailBasicInfo item={item} />
+              <MovieDetailBasicInfo
+                item={itemId > 5 ? itemFromComingSoon : itemFromMovieList}
+              />
             </View>
             <View>
-              <MovieDetailShowTime item={item} />
+              {itemId > 5 ? (
+                <MovieDetailReleaseDate item={itemFromComingSoon} />
+              ) : (
+                <MovieDetailShowTime item={itemFromMovieList} />
+              )}
             </View>
           </View>
         </ScrollView>
