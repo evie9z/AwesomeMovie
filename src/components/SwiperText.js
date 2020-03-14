@@ -16,7 +16,6 @@ export default class SwiperText extends Component {
 
   render() {
     const item = this.props.item;
-    console.log(item.title + " : " + item.title.length);
     return (
       <Animated.View
         style={[styles.textWrapper, { opacity: this.props.imageOpacity }]}

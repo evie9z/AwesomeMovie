@@ -9,6 +9,9 @@ import Assets from "../mockdata/Assets";
 const contentWrapperWidth = wp("90%");
 
 export default class Index extends Component {
+  titleFontSize = titleLen => {
+    return titleLen > 15 ? 20 : 24;
+  };
   render() {
     const item = this.props.item;
     return (
@@ -24,7 +27,14 @@ export default class Index extends Component {
 
           {/* Other info */}
           <View style={styles.basic}>
-            <Text style={[styles.title]}>{item.title}</Text>
+            <Text
+              style={[
+                styles.title,
+                { fontSize: this.titleFontSize(item.title.length) }
+              ]}
+            >
+              {item.title}
+            </Text>
             <View style={styles.averageRating}>
               <Text style={[styles.displayText]}>{item.averageRating}/10</Text>
             </View>
@@ -129,7 +139,6 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "rockwell",
-    fontSize: 24,
     color: "#FFF",
     textAlign: "left"
   },

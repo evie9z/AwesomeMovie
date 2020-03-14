@@ -1,0 +1,27 @@
+[
+  {
+    "id": 6,
+    "title": "The French Dispatch",
+    "poster": "thefrenchdispatch",
+    "posterPrimaryColor": "#E19EB1",
+    "posterSecondaryColor": "#A6E7F1",
+    "rating": "R",
+    "brief": "A love letter to journalists set in an outpost of an American newspaper in a fictional 20th-century French city that brings to life a collection of stories published in 'The French Dispatch' magazine.",
+    "averageRating": "7.4",
+    "runtimeMinutes": 108,
+    "director": ["Wes Anderson"],
+    "actors": ["Elisabeth Moss", "Timothée Chalamet", "Léa Seydoux"],
+    "labels": ["Drama", "Romance"],
+    "inTheater": false,
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "showtimes": [
+          "2020-04-17T19:00:00",
+          "2020-04-17T21:00:00",
+          "2020-04-17T23:00:00"
+        ]
+      }
+    ]
+  }
+]

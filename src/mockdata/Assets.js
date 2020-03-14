@@ -5,7 +5,8 @@ export default {
     beautifulday: require("../assets/posters/2_beautifulday.jpg"),
     knivesout: require("../assets/posters/3_knivesout.jpg"),
     nineteenseventeen: require("../assets/posters/4_nineteenseventeen.jpg"),
-    joker: require("../assets/posters/5_joker.jpg")
+    joker: require("../assets/posters/5_joker.jpg"),
+    thefrenchdispatch: require("../assets/posters/6_thefrenchdispatch.jpg")
   },
   icon: {
     star: require("../assets/icons/icon_star.png"),
