@@ -3,6 +3,7 @@ import Swiper from "../components/Swiper";
 import MovieDetail from "./MovieDetail";
 import ListView from "./ListView";
 import React, { Component } from "react";
+import { Easing } from "react-native";
 import * as Font from "expo-font";
 
 const Navigator = FluidNavigator(
@@ -12,7 +13,8 @@ const Navigator = FluidNavigator(
     ListView: { screen: ListView }
   },
   {
-    duration: 1000
+    duration: 1000,
+    easing: Easing.easing
   }
 );
 
