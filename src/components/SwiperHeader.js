@@ -14,7 +14,7 @@ export default class SwiperHeader extends Component {
           </TouchableOpacity>
         </View>
         <View style={styles.cityWrapper}>
-          <Text style={styles.city}>Seattle, WA</Text>
+          <Text style={styles.city}>98005</Text>
         </View>
         <View style={styles.cityBackground} />
         <View style={styles.viewIconWrapper}>
@@ -27,6 +27,9 @@ export default class SwiperHeader extends Component {
           >
             <Image style={styles.icon} source={Assets.icon["changeView"]} />
           </TouchableOpacity>
+        </View>
+        <View style={styles.searchIconWrapper}>
+          <Image style={styles.icon} source={Assets.icon["search"]} />
         </View>
       </View>
     );
@@ -48,6 +51,13 @@ const styles = StyleSheet.create({
     width: 25,
     height: 25
   },
+  searchIconWrapper: {
+    position: "absolute",
+    top: 20,
+    right: 58,
+    width: 25,
+    height: 25
+  },
   icon: {
     width: 25,
     height: 25,
@@ -60,7 +70,7 @@ const styles = StyleSheet.create({
     top: 20,
     left: 60,
     borderRadius: 5,
-    width: 100,
+    width: 60,
     height: 25,
     alignItems: "center",
     justifyContent: "center"
@@ -71,7 +81,7 @@ const styles = StyleSheet.create({
     left: 60,
     borderRadius: 5,
     height: 25,
-    width: 100,
+    width: 60,
     backgroundColor: "#fff",
     opacity: 0.3
   },

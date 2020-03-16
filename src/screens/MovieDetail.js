@@ -13,7 +13,7 @@ export default class MovieDetail extends Component {
   render() {
     const itemId = this.props.navigation.getParam("itemId", "NO-ID");
     const itemFromMovieList = movieList[itemId];
-    const itemFromComingSoon = comingSoon[itemId - 6];
+    const itemFromComingSoon = comingSoon[itemId - 5];
     return (
       <View style={styles.container}>
         <View style={styles.headerContainer}>
@@ -23,11 +23,11 @@ export default class MovieDetail extends Component {
           <View style={styles.contentWrapper}>
             <View>
               <MovieDetailBasicInfo
-                item={itemId > 5 ? itemFromComingSoon : itemFromMovieList}
+                item={itemId > 4 ? itemFromComingSoon : itemFromMovieList}
               />
             </View>
             <View>
-              {itemId > 5 ? (
+              {itemId > 4 ? (
                 <MovieDetailReleaseDate item={itemFromComingSoon} />
               ) : (
                 <MovieDetailShowTime item={itemFromMovieList} />

@@ -1,10 +1,18 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Animated, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Animated,
+  Image,
+  TouchableOpacity
+} from "react-native";
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp
 } from "react-native-responsive-screen";
 import Assets from "../mockdata/Assets";
+import moment from "moment";
 
 const contentWrapperWidth = (hp("60%") * 2) / 3;
 
@@ -20,47 +28,79 @@ export default class SwiperText extends Component {
       <Animated.View
         style={[styles.textWrapper, { opacity: this.props.imageOpacity }]}
       >
-        <Text
-          style={[
-            styles.title,
-            { fontSize: this.titleFontSize(item.title.length) }
-          ]}
+        <TouchableOpacity
+          key={item.id}
+          activeOpacity={1}
+          onPress={() =>
+            this.props.navigation.navigate("MovieDetail", {
+              itemId: item.id
+            })
+          }
         >
-          {item.title}
-        </Text>
+          <Text
+            style={[
+              styles.title,
+              { fontSize: this.titleFontSize(item.title.length) }
+            ]}
+          >
+            {item.title}
+          </Text>
+        </TouchableOpacity>
+
         <View style={styles.info}>
           <View style={styles.basic}>
             <View style={styles.ratingWrapper}>
               <View style={styles.rating}>
-                <Text style={[styles.normalText]}>{item.rating}</Text>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>
+                  {item.rating}
+                </Text>
               </View>
               <View style={styles.rating}>
-                <Text style={[styles.normalText]}>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>·</Text>
+              </View>
+              <View style={styles.rating}>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>
                   {Math.floor(item.runtimeMinutes / 60)}h{" "}
                   {item.runtimeMinutes % 60}min
                 </Text>
               </View>
+              <View style={styles.rating}>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>·</Text>
+              </View>
+              <View style={styles.rating}>
+                <Text
+                  style={[styles.normalText, { fontWeight: 600, opacity: 0.6 }]}
+                >
+                  {item.averageRating}/10
+                </Text>
+              </View>
+            </View>
+            <View style={styles.ratingWrapper}>
+              <View style={styles.rating}>
+                <Text style={[styles.normalText, { fontWeight: 600 }]}>
+                  {item.showtimes[0].theater}
+                </Text>
+              </View>
+              <View style={styles.rating}>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>·</Text>
+              </View>
+              <View style={styles.rating}>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>
+                  {item.showtimes[0].distance}
+                </Text>
+              </View>
             </View>
             <View style={styles.labels}>
-              {item.labels.map((label, i) => (
+              {item.showtimes[0].showtimes.map((t, i) => (
                 <Text
                   style={[
                     styles.label,
                     { backgroundColor: item.posterPrimaryColor }
                   ]}
                 >
-                  {label}
+                  {moment(t).format("LT")}
                 </Text>
               ))}
-            </View>
-          </View>
-          <View style={styles.averageRating}>
-            <View style={styles.iconWrapper}>
-              <Image style={styles.icon} source={Assets.icon["star"]} />
-            </View>
-            <View style={styles.averageRatingNum}>
-              <Text style={[styles.displayText]}>{item.averageRating}</Text>
-              <Text style={styles.displayTextSmall}>/10</Text>
             </View>
           </View>
         </View>
@@ -86,10 +126,11 @@ const styles = StyleSheet.create({
     flexDirection: "column"
   },
   ratingWrapper: {
-    flexDirection: "row"
+    flexDirection: "row",
+    marginTop: 8
   },
   rating: {
-    paddingRight: 15
+    paddingRight: 5
   },
   labels: {
     marginTop: 10,
@@ -99,12 +140,14 @@ const styles = StyleSheet.create({
   label: {
     paddingLeft: 10,
     paddingRight: 10,
-    paddingTop: 2,
+    paddingTop: 5,
+    paddingBottom: 5,
     marginRight: 5,
     borderRadius: 10,
-    height: 20,
+    height: 25,
     fontSize: 12,
     textAlign: "center",
+    textAlignVertical: "center",
     color: "#2C2C2C",
     textAlignVertical: "center",
     includeFontPadding: false

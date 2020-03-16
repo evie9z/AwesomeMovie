@@ -13,7 +13,7 @@ export default class MovieDetailHeader extends Component {
           </TouchableOpacity>
         </View>
         <View style={styles.cityWrapper}>
-          <Text style={styles.city}>Seattle, WA</Text>
+          <Text style={styles.city}>98005</Text>
         </View>
         <View style={styles.viewIconWrapper}>
           <TouchableOpacity onPress={() => this.props.navigation.goBack(null)}>
@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     top: 20,
     left: 60,
     borderRadius: 5,
-    width: 100,
+    width: 60,
     height: 25,
     alignItems: "center",
     justifyContent: "center"
@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
     left: 60,
     borderRadius: 5,
     height: 25,
-    width: 100,
+    width: 60,
     backgroundColor: "#fff",
     opacity: 0.3
   },

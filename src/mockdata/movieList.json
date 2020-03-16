@@ -1,6 +1,32 @@
 [
   {
     "id": 0,
+    "title": "Parasite",
+    "poster": "parasite",
+    "posterPrimaryColor": "#A2BDA5",
+    "posterSecondaryColor": "#5F7E90",
+    "rating": "R",
+    "brief": "A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.",
+    "averageRating": "8.6",
+    "runtimeMinutes": 172,
+    "director": ["Bong Joon Ho"],
+    "actors": ["Kang-ho Song", "Sun-kyun Lee", "Yeo-jeong Jo"],
+    "labels": ["Drama", "Comedy", "Thriller"],
+    "inTheater": true,
+    "showtimes": [
+      {
+        "theater": "Cinemark Lincoln Square",
+        "distance": "1.1 mi",
+        "showtimes": [
+          "2020-03-17T19:00:00",
+          "2020-03-17T21:00:00",
+          "2020-03-17T23:00:00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1,
     "title": "Jojo Rabbit",
     "poster": "jojoRabbit",
     "posterPrimaryColor": "#D4CEC0",
@@ -20,35 +46,11 @@
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
+        "distance": "1.1 mi",
         "showtimes": [
-          "2020-03-17T19:00:00",
-          "2020-03-17T21:00:00",
-          "2020-03-17T23:00:00"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 1,
-    "title": "Parasite",
-    "poster": "parasite",
-    "posterPrimaryColor": "#A2BDA5",
-    "posterSecondaryColor": "#5F7E90",
-    "rating": "R",
-    "brief": "A poor family, the Kims, con their way into becoming the servants of a rich family, the Parks. But their easy life gets complicated when their deception is threatened with exposure.",
-    "averageRating": "8.6",
-    "runtimeMinutes": 172,
-    "director": ["Bong Joon Ho"],
-    "actors": ["Kang-ho Song", "Sun-kyun Lee", "Yeo-jeong Jo"],
-    "labels": ["Drama", "Comedy", "Thriller"],
-    "inTheater": true,
-    "showtimes": [
-      {
-        "theater": "Cinemark Lincoln Square",
-        "showtimes": [
-          "2020-03-17T19:00:00",
-          "2020-03-17T21:00:00",
-          "2020-03-17T23:00:00"
+          "2020-03-17T20:00:00",
+          "2020-03-17T21:30:00",
+          "2020-03-17T23:20:00"
         ]
       }
     ]
@@ -70,9 +72,10 @@
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
+        "distance": "1.1 mi",
         "showtimes": [
-          "2020-03-17T19:00:00",
-          "2020-03-17T21:00:00",
+          "2020-03-17T18:00:00",
+          "2020-03-17T21:40:00",
           "2020-03-17T23:00:00"
         ]
       }
@@ -80,31 +83,6 @@
   },
   {
     "id": 3,
-    "title": "Knives Out",
-    "poster": "knivesout",
-    "posterPrimaryColor": "#CE9E8A",
-    "posterSecondaryColor": "#A5A5A5",
-    "rating": "PG-13",
-    "brief": "A detective investigates the death of a patriarch of an eccentric, combative family.",
-    "averageRating": "8.0",
-    "runtimeMinutes": 131,
-    "director": ["Rian Johnson"],
-    "actors": ["Daniel Craig", "Chris Evans", "Ana de Armas"],
-    "labels": ["Comedy", "Crime", "Drama"],
-    "inTheater": true,
-    "showtimes": [
-      {
-        "theater": "Cinemark Lincoln Square",
-        "showtimes": [
-          "2020-03-17T19:00:00",
-          "2020-03-17T21:00:00",
-          "2020-03-17T23:00:00"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 4,
     "title": "1917",
     "poster": "nineteenseventeen",
     "posterPrimaryColor": "#A6BFDD",
@@ -120,16 +98,17 @@
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
+        "distance": "1.1 mi",
         "showtimes": [
           "2020-03-17T19:00:00",
-          "2020-03-17T21:00:00",
-          "2020-03-17T23:00:00"
+          "2020-03-17T20:00:00",
+          "2020-03-17T21:00:00"
         ]
       }
     ]
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Joker",
     "poster": "joker",
     "posterPrimaryColor": "#8FCAB6",
@@ -145,10 +124,11 @@
     "showtimes": [
       {
         "theater": "Cinemark Lincoln Square",
+        "distance": "1.1 mi",
         "showtimes": [
-          "2020-03-17T19:00:00",
-          "2020-03-17T21:00:00",
-          "2020-03-17T23:00:00"
+          "2020-03-17T19:50:00",
+          "2020-03-17T21:20:00",
+          "2020-03-17T23:10:00"
         ]
       }
     ]
