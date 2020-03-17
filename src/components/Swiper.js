@@ -90,9 +90,7 @@ const styles = StyleSheet.create({
     top: hp("8%"),
     left: 0,
     right: 0,
-    // bottom: 0,
     justifyContent: "center"
-    // alignItems: "center"
   },
   indicator: {
     height: 8,
