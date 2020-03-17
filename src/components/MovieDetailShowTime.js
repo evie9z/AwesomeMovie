@@ -63,7 +63,7 @@ export default class Index extends Component {
             <View style={[styles.dateContainer]}>
               <Text
                 style={
-                  this.state.dateIndex === 0
+                  this.state.dateIndex === 0 && !this.state.clicked
                     ? styles.activeDate
                     : styles.inactiveDate
                 }

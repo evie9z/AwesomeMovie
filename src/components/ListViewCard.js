@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: "#FFF",
     textAlign: "left",
-    height: 80
+    height: 60
   },
   normalText: {
     fontSize: 14,
