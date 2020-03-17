@@ -124,7 +124,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   basic: {
-    width: contentWrapperWidth * 0.8,
+    width: contentWrapperWidth,
     alignItems: "flex-start",
     flexDirection: "column"
   },
@@ -137,7 +137,9 @@ const styles = StyleSheet.create({
   },
   labels: {
     marginTop: 10,
-    flexDirection: "row"
+    flexDirection: "row",
+    flexWrap: "wrap",
+    justifyContent: "flex-start"
   },
   label: {
     paddingLeft: 10,
@@ -145,6 +147,7 @@ const styles = StyleSheet.create({
     paddingTop: 5,
     paddingBottom: 5,
     marginRight: 5,
+    marginBottom: 5,
     borderRadius: 10,
     height: 25,
     fontSize: 12,
@@ -153,15 +156,6 @@ const styles = StyleSheet.create({
     color: "#2C2C2C",
     textAlignVertical: "center",
     includeFontPadding: false
-  },
-  averageRating: {
-    width: contentWrapperWidth * 0.2,
-    flexDirection: "column",
-    alignItems: "center"
-  },
-  averageRatingNum: {
-    flexDirection: "row",
-    alignItems: "center"
   },
   title: {
     fontFamily: "rockwell",
