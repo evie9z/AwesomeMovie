@@ -69,7 +69,10 @@ export default class SwiperText extends Component {
               </View>
               <View style={styles.rating}>
                 <Text
-                  style={[styles.normalText, { fontWeight: 600, opacity: 0.6 }]}
+                  style={[
+                    styles.normalText,
+                    { fontWeight: "600", opacity: 0.6 }
+                  ]}
                 >
                   {item.averageRating}/10
                 </Text>
@@ -77,8 +80,8 @@ export default class SwiperText extends Component {
             </View>
             <View style={styles.ratingWrapper}>
               <View style={styles.rating}>
-                <Text style={[styles.normalText, { fontWeight: 600 }]}>
-                  {item.showtimes[0].theater}
+                <Text style={[styles.normalText, { fontWeight: "600" }]}>
+                  {item.showtimes[0][0].theater}
                 </Text>
               </View>
               <View style={styles.rating}>
@@ -86,12 +89,12 @@ export default class SwiperText extends Component {
               </View>
               <View style={styles.rating}>
                 <Text style={[styles.normalText, { opacity: 0.6 }]}>
-                  {item.showtimes[0].distance}
+                  {item.showtimes[0][0].distance}
                 </Text>
               </View>
             </View>
             <View style={styles.labels}>
-              {item.showtimes[0].showtimes.map((t, i) => (
+              {item.showtimes[0][0].showtimes.standard.map((t, i) => (
                 <Text
                   style={[
                     styles.label,

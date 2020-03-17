@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     textAlign: "center",
     color: "#fff",
-    fontWeight: 600,
+    fontWeight: "600",
     opacity: 1,
     textAlignVertical: "center"
   }

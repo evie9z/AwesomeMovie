@@ -13,15 +13,6 @@
     "actors": ["Elisabeth Moss", "Timothée Chalamet", "Léa Seydoux"],
     "labels": ["Drama", "Romance"],
     "inTheater": false,
-    "showtimes": [
-      {
-        "theater": "Cinemark Lincoln Square",
-        "showtimes": [
-          "2020-04-17T19:00:00",
-          "2020-04-17T21:00:00",
-          "2020-04-17T23:00:00"
-        ]
-      }
-    ]
+    "showtimes": "2020-04-17T19:00:00"
   }
 ]

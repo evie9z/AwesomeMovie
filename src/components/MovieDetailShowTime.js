@@ -1,42 +1,150 @@
 import React, { Component } from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
 import {
-  widthPercentageToDP as wp,
-  heightPercentageToDP as hp
-} from "react-native-responsive-screen";
-import Assets from "../mockdata/Assets";
+  StyleSheet,
+  Text,
+  View,
+  TouchableOpacity,
+  Animated,
+  Easing
+} from "react-native";
+import { widthPercentageToDP as wp } from "react-native-responsive-screen";
 import moment from "moment";
 
 const contentWrapperWidth = wp("90%");
 
 export default class Index extends Component {
+  state = {
+    dateIndex: 0
+  };
+  componentDidMount() {
+    this.EasingIn(300);
+  }
+  componentDidUpdate() {
+    this.EasingIn(0);
+  }
+  _cardOpacity = new Animated.Value(0);
+  _transferY = new Animated.Value(10);
+
+  EasingIn(delay) {
+    Animated.timing(this._cardOpacity, {
+      toValue: 1,
+      duration: 500,
+      delay: delay,
+      easing: Easing.cubic
+    }).start();
+    Animated.timing(this._transferY, {
+      toValue: 0,
+      duration: 500,
+      delay: delay,
+      easing: Easing.linear
+    }).start();
+  }
+
+  handleOnclick = index => {
+    this._cardOpacity = new Animated.Value(0);
+    this._transferY = new Animated.Value(10);
+    this.setState({
+      dateIndex: index
+    });
+  };
+
   render() {
     const item = this.props.item;
+    const labelColor = this.props.item.posterPrimaryColor;
     return (
       <View style={[styles.contentWrapper]}>
-        <View style={[styles.showtimeWrapper]}>
-          <Text style={styles.title}>Showtime</Text>
-          <View style={styles.select}>
-            <Text style={styles.selectText}>{item.showtimes[0].theater}</Text>
-            <View style={styles.selectIconWrapper}>
-              <Image style={styles.selectIcon} source={Assets.icon["select"]} />
+        <View style={[styles.datesWrapper]}>
+          <TouchableOpacity
+            activeOpacity={1}
+            onPress={() => this.handleOnclick(0)}
+          >
+            <View style={[styles.dateContainer]}>
+              <Text style={[styles.activeDate]}>Today</Text>
             </View>
+          </TouchableOpacity>
+          <View style={[styles.dateDivider]}>
+            <Text style={[styles.inactiveDate]}>|</Text>
           </View>
-          <View style={styles.select}>
-            <Text style={styles.selectText}>Today</Text>
-            <View style={styles.selectIconWrapper}>
-              <Image style={styles.selectIcon} source={Assets.icon["select"]} />
+
+          <TouchableOpacity
+            activeOpacity={1}
+            onPress={() => this.handleOnclick(1)}
+          >
+            <View style={[styles.dateContainer]}>
+              <Text style={[styles.inactiveDate]}>Tomorrow</Text>
             </View>
+          </TouchableOpacity>
+
+          <View style={[styles.dateDivider]}>
+            <Text style={[styles.inactiveDate]}>|</Text>
           </View>
-          <View style={styles.times}>
-            {item.showtimes[0].showtimes.map((t, i) => (
-              <Text style={[styles.time]}>{moment(t).format("LT")}</Text>
-            ))}
+
+          <TouchableOpacity
+            activeOpacity={1}
+            onPress={() => this.handleOnclick(2)}
+          >
+            <View style={[styles.dateContainer]}>
+              <Text style={[styles.inactiveDate]}>Thu, Mar 19</Text>
+            </View>
+          </TouchableOpacity>
+
+          <View style={[styles.dateDivider]}>
+            <Text style={[styles.inactiveDate]}>|</Text>
           </View>
+
+          <TouchableOpacity
+            activeOpacity={1}
+            onPress={() => this.handleOnclick(0)}
+          >
+            <View style={[styles.dateContainer]}>
+              <Text style={[styles.inactiveDate]}>Fri, Mar 20</Text>
+            </View>
+          </TouchableOpacity>
         </View>
-        <View style={[styles.buttonWrapper]}>
-          <Text style={styles.buttonText}>GET TICKET</Text>
-        </View>
+        {/* Divider */}
+        <View style={[styles.divider, { opacity: 0.6 }]} />
+
+        {item.showtimes[this.state.dateIndex].map((theater, idex) => (
+          <Animated.View
+            style={[
+              styles.theaterListWrapper,
+              { opacity: this._cardOpacity, top: this._transferY }
+            ]}
+          >
+            <View style={[styles.theaterWrapper]}>
+              <View style={styles.theater}>
+                <Text style={[styles.theaterText, { fontWeight: "600" }]}>
+                  {theater.theater}
+                </Text>
+              </View>
+              <View style={styles.theater}>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>·</Text>
+              </View>
+              <View style={styles.theater}>
+                <Text style={[styles.normalText, { opacity: 0.6 }]}>
+                  {theater.distance}
+                </Text>
+              </View>
+            </View>
+
+            <View style={[styles.showTimesWrapper]}>
+              <View style={styles.standard}>
+                <Text style={[styles.normalText]}>Standard</Text>
+              </View>
+
+              <View style={styles.showtimes}>
+                {theater.showtimes.standard.map((t, i) => (
+                  <Text
+                    style={[styles.showtime, { backgroundColor: labelColor }]}
+                  >
+                    {moment(t).format("LT")}
+                  </Text>
+                ))}
+              </View>
+            </View>
+            <View style={[styles.divider, { opacity: 0.2 }]} />
+          </Animated.View>
+        ))}
       </View>
     );
   }
@@ -45,89 +153,87 @@ export default class Index extends Component {
 const styles = StyleSheet.create({
   contentWrapper: {
     flex: 1,
-    marginTop: 30,
+    marginTop: 5,
     alignItems: "center",
-    // justifyContent: "center",
     flexDirection: "column",
     width: contentWrapperWidth
   },
-  showtimeWrapper: {
-    width: contentWrapperWidth,
-    paddingTop: 20,
-    paddingBottom: 20,
-    paddingLeft: 20,
-    paddingRight: 20,
-    borderRadius: 8,
-    backgroundColor: "#545454",
-    flexDirection: "column",
-    alignItems: "flex-start",
-    justifyContent: "center"
+  divider: {
+    borderBottomColor: "#fff",
+    borderBottomWidth: 1,
+    width: contentWrapperWidth
   },
-  times: {
-    marginTop: 20,
-    flex: 1,
+  datesWrapper: {
+    flexDirection: "row",
+    paddingBottom: 10,
+    paddingTop: 20,
+    justifyContent: "flex-start",
+    width: contentWrapperWidth
+  },
+  dateDivider: {
+    marginLeft: 10,
+    marginRight: 10
+  },
+  inactiveDate: {
+    fontSize: 14,
+    opacity: 0.4,
+    color: "#fff"
+  },
+  activeDate: {
+    fontSize: 14,
+    fontWeight: "600",
+    color: "#fff"
+  },
+  normalText: {
+    fontSize: 14,
+    color: "#FFF"
+  },
+  theaterListWrapper: {
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    width: contentWrapperWidth,
+    marginTop: 20
+  },
+  theaterWrapper: {
     flexDirection: "row"
   },
-  time: {
+  theaterText: {
+    fontSize: 14,
+    color: "#FFF"
+  },
+  theater: {
+    paddingRight: 5
+  },
+  showTimesWrapper: {
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    width: contentWrapperWidth,
+    marginTop: 10,
+    marginBottom: 20
+  },
+  standard: {
+    marginRight: 15
+  },
+  showtimes: {
+    flex: 1,
+    flexWrap: "wrap",
+    flexDirection: "row",
+    justifyContent: "flex-start"
+  },
+  showtime: {
     paddingLeft: 10,
     paddingRight: 10,
-    paddingTop: 2,
+    paddingTop: 5,
+    paddingBottom: 5,
     marginRight: 5,
     borderRadius: 10,
-    borderColor: "#fff",
-    borderWidth: 1,
-    height: 20,
+    height: 25,
     fontSize: 12,
     textAlign: "center",
-    color: "#fff",
+    textAlignVertical: "center",
+    marginBottom: 5,
+    color: "#2C2C2C",
     textAlignVertical: "center",
     includeFontPadding: false
-  },
-  title: {
-    fontFamily: "rockwell",
-    fontSize: 18,
-    color: "#FFF",
-    textAlign: "left"
-  },
-  select: {
-    height: 20,
-    flexDirection: "row",
-    justifyContent: "center",
-    marginTop: 10
-  },
-  selectText: {
-    fontSize: 14,
-    fontWeight: 600,
-    color: "#FFF",
-    marginRight: 10,
-    justifyContent: "center"
-  },
-  selectIconWrapper: {
-    marginTop: 5,
-    width: 13,
-    height: 8
-  },
-  selectIcon: {
-    width: 13,
-    height: 8,
-    resizeMode: "contain",
-    justifyContent: "center"
-  },
-  buttonWrapper: {
-    width: contentWrapperWidth,
-    paddingTop: 10,
-    paddingBottom: 10,
-    marginTop: 50,
-    marginBottom: 50,
-    borderRadius: 5,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  },
-  buttonText: {
-    fontSize: 14,
-    fontWeight: 600,
-    color: "#2C2C2C",
-    textAlign: "center"
   }
 });

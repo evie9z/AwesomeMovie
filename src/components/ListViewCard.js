@@ -56,7 +56,7 @@ export default class Index extends Component {
                   </Text>
                 ) : (
                   <Text style={[styles.displayText]}>
-                    {moment(item.showtimes[0].showtimes[0]).format("ll")}
+                    {moment(item.showtimes).format("ll")}
                   </Text>
                 )}
               </View>

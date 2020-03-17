@@ -10,13 +10,9 @@ export default class Index extends Component {
     const item = this.props.item;
     return (
       <View style={[styles.contentWrapper]}>
-        <View style={[styles.showtimeWrapper]}>
-          <Text style={styles.title}>Release Date</Text>
-          <View style={styles.dateWrapper}>
-            <Text style={styles.date}>
-              {moment(item.showtimes[0].showtimes[0]).format("ll")}
-            </Text>
-          </View>
+        <Text style={styles.title}>Release Date</Text>
+        <View style={styles.dateWrapper}>
+          <Text style={styles.date}>{moment(item.showtimes).format("ll")}</Text>
         </View>
       </View>
     );
@@ -27,26 +23,14 @@ const styles = StyleSheet.create({
   contentWrapper: {
     flex: 1,
     marginTop: 30,
-    alignItems: "center",
+    alignItems: "flex-start",
     flexDirection: "column",
     width: contentWrapperWidth
   },
-  showtimeWrapper: {
-    width: contentWrapperWidth,
-    paddingTop: 20,
-    paddingBottom: 20,
-    paddingLeft: 20,
-    paddingRight: 20,
-    borderRadius: 8,
-    flexDirection: "column",
-    backgroundColor: "#545454",
-    alignItems: "flex-start",
-    justifyContent: "center"
-  },
   title: {
-    fontFamily: "rockwell",
-    fontSize: 18,
+    fontSize: 16,
     color: "#FFF",
+    fontWeight: "600",
     textAlign: "left"
   },
   dateWrapper: {
@@ -56,7 +40,6 @@ const styles = StyleSheet.create({
   },
   date: {
     fontSize: 14,
-    fontWeight: 600,
     color: "#FFF",
     marginRight: 10,
     justifyContent: "center"

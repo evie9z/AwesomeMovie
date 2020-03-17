@@ -4,12 +4,22 @@ import MovieDetailHeader from "../components/MovieDetailHeader";
 import MovieDetailBasicInfo from "../components/MovieDetailBasicInfo";
 import MovieDetailShowTime from "../components/MovieDetailShowTime";
 import MovieDetailReleaseDate from "../components/MovieDetailRelaseDate";
+import MovieDetailTabs from "../components/MovieDetailTabs";
+import MovieDetailCast from "../components/MovieDetailCast";
 import movieList from "../mockdata/movieList.json";
 import comingSoon from "../mockdata/comingSoon.json";
 
 const { width } = Dimensions.get("window");
 
 export default class MovieDetail extends Component {
+  state = {
+    isShowtime: true
+  };
+  handleTabIndexChange = () => {
+    this.setState({
+      isShowtime: !this.state.isShowtime
+    });
+  };
   render() {
     const itemId = this.props.navigation.getParam("itemId", "NO-ID");
     const itemFromMovieList = movieList[itemId];
@@ -26,11 +36,27 @@ export default class MovieDetail extends Component {
                 item={itemId > 4 ? itemFromComingSoon : itemFromMovieList}
               />
             </View>
+            <View style={styles.tabContainer}>
+              <MovieDetailTabs
+                handleTabIndexChange={this.handleTabIndexChange}
+                isShowtime={this.state.isShowtime}
+              />
+            </View>
             <View>
-              {itemId > 4 ? (
-                <MovieDetailReleaseDate item={itemFromComingSoon} />
+              {this.state.isShowtime ? (
+                <View>
+                  {itemId > 4 ? (
+                    <MovieDetailReleaseDate item={itemFromComingSoon} />
+                  ) : (
+                    <MovieDetailShowTime item={itemFromMovieList} />
+                  )}
+                </View>
               ) : (
-                <MovieDetailShowTime item={itemFromMovieList} />
+                <View>
+                  <MovieDetailCast
+                    item={itemId > 4 ? itemFromComingSoon : itemFromMovieList}
+                  />
+                </View>
               )}
             </View>
           </View>
@@ -62,5 +88,12 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
     marginTop: 20,
     flexDirection: "column"
+  },
+  tabContainer: {
+    backgroundColor: "#2C2C2C",
+    height: 50,
+    width: width,
+    justifyContent: "center",
+    alignItems: "center"
   }
 });
