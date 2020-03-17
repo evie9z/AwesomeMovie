@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/icons/icon_192x192.png"
   },
   {
-    "revision": "d699e3205eeb069d409f",
-    "url": "/AwesomeMovie/static/js/app.5dcc4d8b.chunk.js"
+    "revision": "7f3263d18ebf61845967",
+    "url": "/AwesomeMovie/static/js/app.6857c1e4.chunk.js"
   },
   {
-    "revision": "ad698c47afdd6c78fd98b73afc942435",
-    "url": "/AwesomeMovie/static/js/app.5dcc4d8b.chunk.js.gz"
+    "revision": "054233fad063fab96cfd90f84cb5cd83",
+    "url": "/AwesomeMovie/static/js/app.6857c1e4.chunk.js.gz"
   },
   {
     "revision": "6165c9d7a2e729ba57b23dd93add5366",
@@ -68,10 +68,6 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_2208x1242.png"
   },
   {
-    "revision": "d3a82b13da9cac887a44ec48cd996a7e",
-    "url": "/AwesomeMovie/manifest.json"
-  },
-  {
     "revision": "d0c694b562b2208635f250762cd7fc79",
     "url": "/AwesomeMovie/serve.json"
   },
@@ -84,52 +80,56 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_2688x1242.png"
   },
   {
-    "revision": "7a7bc7ead25db795e58b336f04d2624c",
-    "url": "/AwesomeMovie/favicon.ico"
-  },
-  {
-    "revision": "a9d8c358bce85c172f67fe441087eea5",
-    "url": "/AwesomeMovie/index.html"
-  },
-  {
-    "revision": "89988c32576cc8f03e323df71d654832",
-    "url": "/AwesomeMovie/apple/splash/icon_750x1334.png"
-  },
-  {
-    "revision": "69240c24741f183900d03b5c4ce19206",
-    "url": "/AwesomeMovie/apple/splash/icon_1242x2688.png"
-  },
-  {
-    "revision": "48c7ed4e7da9792af288a60d7242d615",
-    "url": "/AwesomeMovie/expo-service-worker.js"
-  },
-  {
-    "revision": "16709f23227d220b53e235a942bf292c",
-    "url": "/AwesomeMovie/expo-service-worker.js.gz"
-  },
-  {
-    "revision": "36edd111db5f9a11c4905281ca18f1c6",
-    "url": "/AwesomeMovie/apple/splash/icon_2436x1125.png"
-  },
-  {
-    "revision": "1d7178646c4a10ffbcca9248af6eca35",
-    "url": "/AwesomeMovie/apple/splash/icon_828x1792.png"
+    "revision": "d3a82b13da9cac887a44ec48cd996a7e",
+    "url": "/AwesomeMovie/manifest.json"
   },
   {
     "revision": "4a28b0af364ce3da5ecb45d1961a5ec4",
     "url": "/AwesomeMovie/apple/splash/icon_640x1136.png"
   },
   {
+    "revision": "a0ba39addfbf3df422afe52628d0b351",
+    "url": "/AwesomeMovie/apple/splash/icon_1136x640.png"
+  },
+  {
+    "revision": "69240c24741f183900d03b5c4ce19206",
+    "url": "/AwesomeMovie/apple/splash/icon_1242x2688.png"
+  },
+  {
     "revision": "87272d328c7de25b9174389fc3168c0e",
     "url": "/AwesomeMovie/apple/splash/icon_1334x750.png"
+  },
+  {
+    "revision": "48c7ed4e7da9792af288a60d7242d615",
+    "url": "/AwesomeMovie/expo-service-worker.js"
+  },
+  {
+    "revision": "7a7bc7ead25db795e58b336f04d2624c",
+    "url": "/AwesomeMovie/favicon.ico"
+  },
+  {
+    "revision": "36edd111db5f9a11c4905281ca18f1c6",
+    "url": "/AwesomeMovie/apple/splash/icon_2436x1125.png"
+  },
+  {
+    "revision": "16709f23227d220b53e235a942bf292c",
+    "url": "/AwesomeMovie/expo-service-worker.js.gz"
   },
   {
     "revision": "253a3d5fb09c1b5e78acb7e94e49522c",
     "url": "/AwesomeMovie/apple/splash/icon_1242x2208.png"
   },
   {
-    "revision": "a0ba39addfbf3df422afe52628d0b351",
-    "url": "/AwesomeMovie/apple/splash/icon_1136x640.png"
+    "revision": "89988c32576cc8f03e323df71d654832",
+    "url": "/AwesomeMovie/apple/splash/icon_750x1334.png"
+  },
+  {
+    "revision": "1d7178646c4a10ffbcca9248af6eca35",
+    "url": "/AwesomeMovie/apple/splash/icon_828x1792.png"
+  },
+  {
+    "revision": "22f1b492b822c8ac74ff10abd041966f",
+    "url": "/AwesomeMovie/index.html"
   },
   {
     "revision": "0baea2095ec4b94adb3c732b7a678a60",
