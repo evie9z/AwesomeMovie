@@ -120,7 +120,7 @@ export default class Index extends Component {
 
           <TouchableOpacity
             activeOpacity={3}
-            onPress={() => this.handleOnclick(0)}
+            onPress={() => this.handleOnclick(3)}
           >
             <View style={[styles.dateContainer]}>
               <Text

@@ -137,7 +137,6 @@ const styles = StyleSheet.create({
   },
   labels: {
     marginTop: 10,
-    flex: 1,
     flexDirection: "row"
   },
   label: {
