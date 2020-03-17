@@ -41,7 +41,7 @@ export default class BackgroundCircle extends Component {
                 translateX
               },
               {
-                translateY: -hp("35%")
+                translateY: -hp("38%")
               },
               {
                 scale

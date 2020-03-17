@@ -41,10 +41,10 @@ export default class PosterImage extends Component {
 
 const styles = StyleSheet.create({
   moviePosterWrapper: {
-    marginTop: hp("10%"),
+    marginTop: hp("12%"),
     marginBottom: 30,
-    height: hp("60%"),
-    width: (hp("60%") * 2) / 3,
+    height: hp("55%"),
+    width: (hp("55%") * 2) / 3,
     // Border radius
     borderTopLeftRadius: hp("2%"),
     borderTopRightRadius: hp("2%"),
@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
     elevation: 2
   },
   moviePoster: {
-    width: (hp("60%") * 2) / 3,
-    height: hp("60%"),
+    width: (hp("55%") * 2) / 3,
+    height: hp("55%"),
     resizeMode: "contain",
     alignItems: "center",
     justifyContent: "center"
