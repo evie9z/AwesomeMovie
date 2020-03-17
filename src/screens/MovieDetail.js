@@ -24,6 +24,9 @@ export default class MovieDetail extends Component {
     const itemId = this.props.navigation.getParam("itemId", "NO-ID");
     const itemFromMovieList = movieList[itemId];
     const itemFromComingSoon = comingSoon[itemId - 5];
+    console.log("itemId: " + itemId);
+    console.log("it: " + itemFromMovieList.id);
+    console.log("name: " + itemFromMovieList.title);
     return (
       <View style={styles.container}>
         <View style={styles.headerContainer}>

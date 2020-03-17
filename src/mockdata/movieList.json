@@ -192,6 +192,100 @@
     ]
   },
   {
+    "id": 2,
+    "title": "A Beautiful Day in the Neighborhood",
+    "poster": "beautifulday",
+    "posterPrimaryColor": "#E19EB1",
+    "posterSecondaryColor": "#A6E7F1",
+    "rating": "PG",
+    "brief": "Based on the true story of a real-life friendship between Fred Rogers and journalist Lloyd Vogel.",
+    "averageRating": "7.4",
+    "runtimeMinutes": 109,
+    "director": ["Marielle Heller"],
+    "actors": ["Tom Hanks", "Matthew Rhys", "Chris Cooper"],
+    "labels": ["Biography", "Drama"],
+    "inTheater": true,
+    "showtimes": [
+      [
+        {
+          "theater": "Cinemark Lincoln Square",
+          "distance": "1.1 mi",
+          "showtimes": {
+            "standard": [
+              "2020-03-17T19:00:00",
+              "2020-03-17T21:00:00",
+              "2020-03-17T23:00:00"
+            ]
+          }
+        },
+        {
+          "theater": "Regal Crossroads",
+          "distance": "1.6 mi",
+          "showtimes": {
+            "standard": [
+              "2020-03-17T19:20:00",
+              "2020-03-17T20:00:00",
+              "2020-03-17T22:30:00"
+            ]
+          }
+        },
+        {
+          "theater": "AMC Factoria 8",
+          "distance": "3.2 mi",
+          "showtimes": {
+            "standard": [
+              "2020-03-17T18:50:00",
+              "2020-03-17T20:30:00",
+              "2020-03-17T21:30:00",
+              "2020-03-17T23:10:00"
+            ]
+          }
+        }
+      ],
+      [
+        {
+          "theater": "Cinemark Lincoln Square",
+          "distance": "1.1 mi",
+          "showtimes": {
+            "standard": ["2020-03-18T19:00:00", "2020-03-18T21:00:00"]
+          }
+        }
+      ],
+      [
+        {
+          "theater": "Cinemark Lincoln Square",
+          "distance": "1.1 mi",
+          "showtimes": {
+            "standard": [
+              "2020-03-19T19:00:00",
+              "2020-03-19T21:00:00",
+              "2020-03-19T23:00:00"
+            ]
+          }
+        },
+        {
+          "theater": "Regal Crossroads",
+          "distance": "1.6 mi",
+          "showtimes": {
+            "standard": ["2020-03-19T19:20:00", "2020-03-19T20:00:00"]
+          }
+        },
+        {
+          "theater": "AMC Factoria 8",
+          "distance": "3.2 mi",
+          "showtimes": {
+            "standard": [
+              "2020-03-19T18:50:00",
+              "2020-03-19T20:30:00",
+              "2020-03-19T21:30:00",
+              "2020-03-19T23:10:00"
+            ]
+          }
+        }
+      ]
+    ]
+  },
+  {
     "id": 3,
     "title": "1917",
     "poster": "nineteenseventeen",

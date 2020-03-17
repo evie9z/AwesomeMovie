@@ -14,7 +14,8 @@ const contentWrapperWidth = wp("90%");
 
 export default class Index extends Component {
   state = {
-    dateIndex: 0
+    dateIndex: 0,
+    clicked: false
   };
   componentDidMount() {
     this.EasingIn(300);
@@ -44,7 +45,8 @@ export default class Index extends Component {
     this._cardOpacity = new Animated.Value(0);
     this._transferY = new Animated.Value(10);
     this.setState({
-      dateIndex: index
+      dateIndex: index === 3 ? 0 : index,
+      clicked: index === 3 ? true : false
     });
   };
 
@@ -59,7 +61,15 @@ export default class Index extends Component {
             onPress={() => this.handleOnclick(0)}
           >
             <View style={[styles.dateContainer]}>
-              <Text style={[styles.activeDate]}>Today</Text>
+              <Text
+                style={
+                  this.state.dateIndex === 0
+                    ? styles.activeDate
+                    : styles.inactiveDate
+                }
+              >
+                Today
+              </Text>
             </View>
           </TouchableOpacity>
           <View style={[styles.dateDivider]}>
@@ -71,7 +81,15 @@ export default class Index extends Component {
             onPress={() => this.handleOnclick(1)}
           >
             <View style={[styles.dateContainer]}>
-              <Text style={[styles.inactiveDate]}>Tomorrow</Text>
+              <Text
+                style={
+                  this.state.dateIndex === 1
+                    ? styles.activeDate
+                    : styles.inactiveDate
+                }
+              >
+                Tomorrow
+              </Text>
             </View>
           </TouchableOpacity>
 
@@ -84,7 +102,15 @@ export default class Index extends Component {
             onPress={() => this.handleOnclick(2)}
           >
             <View style={[styles.dateContainer]}>
-              <Text style={[styles.inactiveDate]}>Thu, Mar 19</Text>
+              <Text
+                style={
+                  this.state.dateIndex === 2
+                    ? styles.activeDate
+                    : styles.inactiveDate
+                }
+              >
+                Thu, Mar 19
+              </Text>
             </View>
           </TouchableOpacity>
 
@@ -93,11 +119,17 @@ export default class Index extends Component {
           </View>
 
           <TouchableOpacity
-            activeOpacity={1}
+            activeOpacity={3}
             onPress={() => this.handleOnclick(0)}
           >
             <View style={[styles.dateContainer]}>
-              <Text style={[styles.inactiveDate]}>Fri, Mar 20</Text>
+              <Text
+                style={
+                  this.state.clicked ? styles.activeDate : styles.inactiveDate
+                }
+              >
+                Fri, Mar 20
+              </Text>
             </View>
           </TouchableOpacity>
         </View>
@@ -165,7 +197,7 @@ const styles = StyleSheet.create({
   },
   datesWrapper: {
     flexDirection: "row",
-    paddingBottom: 10,
+    paddingBottom: 20,
     paddingTop: 20,
     justifyContent: "flex-start",
     width: contentWrapperWidth
