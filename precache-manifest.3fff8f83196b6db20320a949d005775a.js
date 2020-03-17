@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/icons/icon_192x192.png"
   },
   {
-    "revision": "30d60c577243293a37f7",
-    "url": "/AwesomeMovie/static/js/app.1480d050.chunk.js"
+    "revision": "c1c8de6283f9ef445162",
+    "url": "/AwesomeMovie/static/js/app.b7c1ebba.chunk.js"
   },
   {
-    "revision": "47e1b06ff8995de58f07b5e38b0f0679",
-    "url": "/AwesomeMovie/static/js/app.1480d050.chunk.js.gz"
+    "revision": "3dbb01bc95ed25d1b6d83cdb8aff12e7",
+    "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
   },
   {
     "revision": "6165c9d7a2e729ba57b23dd93add5366",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/static/media/Rockwell.7f22e492.ttc"
   },
   {
-    "revision": "3dbb01bc95ed25d1b6d83cdb8aff12e7",
-    "url": "/AwesomeMovie/static/js/runtime~app.6188b6d0.js.gz"
+    "revision": "f1118dca7c972bb4c41ef231063062c7",
+    "url": "/AwesomeMovie/static/js/app.b7c1ebba.chunk.js.gz"
   },
   {
     "revision": "39fa7d56c93939f57e49",
@@ -100,20 +100,20 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_1334x750.png"
   },
   {
-    "revision": "7a7bc7ead25db795e58b336f04d2624c",
-    "url": "/AwesomeMovie/favicon.ico"
-  },
-  {
     "revision": "48c7ed4e7da9792af288a60d7242d615",
     "url": "/AwesomeMovie/expo-service-worker.js"
+  },
+  {
+    "revision": "16709f23227d220b53e235a942bf292c",
+    "url": "/AwesomeMovie/expo-service-worker.js.gz"
   },
   {
     "revision": "36edd111db5f9a11c4905281ca18f1c6",
     "url": "/AwesomeMovie/apple/splash/icon_2436x1125.png"
   },
   {
-    "revision": "16709f23227d220b53e235a942bf292c",
-    "url": "/AwesomeMovie/expo-service-worker.js.gz"
+    "revision": "7a7bc7ead25db795e58b336f04d2624c",
+    "url": "/AwesomeMovie/favicon.ico"
   },
   {
     "revision": "253a3d5fb09c1b5e78acb7e94e49522c",
@@ -128,7 +128,7 @@ self.__precacheManifest = [
     "url": "/AwesomeMovie/apple/splash/icon_828x1792.png"
   },
   {
-    "revision": "93508afa8fac83f44e31baa453fb33ea",
+    "revision": "fe67cbf9be4978f6055b37d0fec47288",
     "url": "/AwesomeMovie/index.html"
   },
   {
